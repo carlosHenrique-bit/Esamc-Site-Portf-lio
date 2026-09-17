@@ -1,0 +1,114 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1e2a26;
+  background-color: #f2f4f3;
+  margin: 0;
+  padding: 24px;
+}
+
+.barra {
+  background-color: #ffffff;
+  border: 1px solid #c7d2cc;
+  padding: 12px 20px;
+  margin-bottom: 24px;
+}
+
+.barra a {
+  color: #0d5b52;
+  text-decoration: none;
+}
+
+.produto {
+  background-color: #ffffff;
+  border: 1px solid #c7d2cc;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.mini {
+  width: 80px;
+  height: 80px;
+  background-color: #9fb3ab;
+  border-radius: 8px;
+}
+
+.dados h3 { margin: 0 0 4px 0; color: #0d5b52; font-size: 1.05rem; }
+.dados p  { margin: 0; font-size: 0.92rem; color: #5f706a; }
+
+.faixa {
+  box-sizing: border-box;   /* a largura declarada já inclui padding e borda */
+  width: 420px;
+  background-color: #e4ece9;
+  border: 1px solid #9fb3ab;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+}
+
+.bloco {
+  background-color: #ffffff;
+  border: 1px solid #c7d2cc;
+  padding: 16px;
+}
+
+
+/* ==========================================================
+   E1 · a barra em uma linha
+   ========================================================== */
+.links {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+
+/* ==========================================================
+   E2 · o cartão de produto
+   ========================================================== */
+.produto {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+/*
+  E3 1.Volta a configuração orinal, e nada aparece no console
+  2. Refused to apply style from 'http://127.0.0.1:5500/treino2.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+  3. Pois o primeiro consegue se manter e não necessariamente é um erro, enquanto o outro busca um arquivo não existente que gera um erro.
+  */
+
+/* ==========================================================
+   E4 · a grade e a faixa
+   ========================================================== */
+.grade {
+  display: flex;
+  flex-wrap:nowrap;
+  gap: 20px;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #c7d2cc;
+  padding: 12px 20px;
+  margin-bottom: 24px;
+}
+
+#ft-perfil img {  
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #1e2a26;
+}
+
+.txt {
+  line-height: 15px;
+}
+
+/* a media query, quando você chegar nela, vai NO FIM do arquivo */
